@@ -2,8 +2,8 @@
 
 /* ==== flex-контейнер в Секции Секции_5 Наши клиенты (clients) ===== */
 .clients-list {
-    display: flex;
-    justify-content: space-between;
+    @extend %lists;
+    @extend %flex-wrap;
 
     /* УБРАТЬ */
     /* outline: 2px solid tomato;  */
@@ -11,13 +11,28 @@
 }
 
 .clients-item {
-    width: 170px;
+    width: 50%;
+    // width: 170px;
     height: 92px;
-    /* display: flex; */
+    
 
     /* УБРАТЬ */
     /* outline: 2px solid tomato; */
     /* background-color: tomato; */
+
+    @media screen and (min-width: $tablet) {
+        // width: calc((100% - 4 * 5px) / 2);
+        width: calc(100% / 3);;
+        // margin: 5px;
+        }
+
+    @media screen and (min-width: $desktop) {
+        // width: calc((100% - 6 * 10px) / 3);
+        flex-wrap: nowrap;
+        width: calc(100% / 6);
+        // margin: 10px;
+        }
+
 }
 
 .clients-link {
@@ -45,12 +60,6 @@
         }
 }
 
-// --------------------------------------------
-// .clients-link:hover,
-// .clients-link:focus {
-//     border: 1px solid var(--color-logo-links-hover);
-//     fill: var(--color-logo-links-hover);
-// }
-// _____________________________________________________
+
 
 // ___________________  К О Н Е Ц  Секции_5 Наши клиенты ______________________ 

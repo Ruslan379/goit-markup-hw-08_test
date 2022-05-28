@@ -1,0 +1,42 @@
+// !----------- Убираем подчеркивание со ВСЕХ ссылок -----------
+/* a {text-decoration: none;} */
+%links {
+  text-decoration: none;
+  // color: currentColor;
+}
+
+
+// !---- Убираем точки и ВЕРХ и НИЗ отступы со ВСЕХ списков ----
+/* ul {list-style-type: none;} */
+%lists {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+// !--------------------- flex-контейнеры ---------------------
+
+%flex {
+  display: flex;
+}
+
+%flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-spacebetween-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
