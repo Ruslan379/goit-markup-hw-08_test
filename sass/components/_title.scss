@@ -1,0 +1,14 @@
+/* === Стилизация Заголовка h2 в Блок-секция_3 Чем мы занимаемся (activities)
+ и в Блок-секция_4 Наша команда (team) === */
+ 
+.section-titles {
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    @include font(700, 36px, 1.67, null);
+
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.67;
+}

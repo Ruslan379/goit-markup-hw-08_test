@@ -1,0 +1,36 @@
+/* =====================  ОСНОВНОЙ Контейнер (container) ===================== */
+.container {
+    width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    /* УБРАТЬ */
+    /* outline: 2px solid tomato;  */
+    /* background-color: tomato; */
+}
+
+
+/* =================== flex - контейнеры (________)==================== */
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-spacebetween-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

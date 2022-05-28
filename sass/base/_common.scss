@@ -1,0 +1,16 @@
+body {
+    color: var(--color-font-main);
+    background-color: var(--color-light);
+    /* =============================== */
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* line-height: 1.71; */
+    letter-spacing: 0.03em;
+}
+
+
+/* ============ Секция - отступы 94px сверху и снизу ============ */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

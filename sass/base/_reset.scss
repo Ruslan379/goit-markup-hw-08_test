@@ -1,0 +1,42 @@
+/* ========== Сброс отступов у ВСЕХ заголовков и ВСЕГО текста ========== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* =================== Сброс нижнего отступа у img =================== */
+img {
+    display: block;
+}
+
+
+/* ------ Убираем подчеркивание со ВСЕХ ссылок ------ */
+/* a {text-decoration: none;} */
+.links {
+    text-decoration: none;
+}
+
+
+/* ---- Убираем точки и ВЕРХ и НИЗ отступы со ВСЕХ списков ---- */
+/* ul {list-style-type: none;} */
+.lists {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+/* --- Задаем ВСЕМ кнопкам тип курсора pointer ------ */
+.buttons {
+    cursor: pointer;
+}
+
+
+

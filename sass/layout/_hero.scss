@@ -1,0 +1,56 @@
+
+/* ============ Стилизация Секции (hero) в ГЕРОЙ  ============ */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+
+/* ============== Контейнер для ФОНА в ГЕРОЙ (overlay========== */
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/bck-img.jpg");
+    /* background-image: url("../images/bck-img.jpg"); */
+
+    background-color: var(--color-background-footer);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* outline: 2px solid tomato;  */
+}
+
+
+/* ====== Стилизация заголовка h1 в ГЕРОЙ (hero__title) ===== */
+.hero__title {
+    width: 696px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* text-align: center; */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--color-light);
+
+    /* УБРАТЬ */
+    /* outline: 2px solid rgb(20, 53, 240);  */
+}
+
+/* _________________________  К О Н Е Ц   Блок-секции_1 ГЕРОЙ (hero) _________________________ */

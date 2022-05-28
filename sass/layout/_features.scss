@@ -1,0 +1,93 @@
+/* ================ Стилизация Секции Наши особенности (features) ================ */
+
+/* ==== flex-контейнер в Секции Наши особенности (features) 1 вариант ===== */
+/* .features-list {
+    display: flex;
+    justify-content: space-between;
+}
+.features-list .features-item {
+    width: 270px;
+
+    background-color: tomato;
+} */
+/* ____________________________________________________________________________ */
+
+
+/* ==== flex-контейнер в Секции Наши особенности (features) 2 вариант ===== */
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
+.features-item {
+    width: calc((100% - 90px) / 3);
+        &::before {
+        content: "";
+        display: block;
+        height: 120px;
+
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: var(--color-background-team);
+
+    }
+}
+
+/* ============== Иконки в Секции Наши особенности (features) =============== */
+// .features-item::before {
+//     content: "";
+//     display: block;
+//     height: 120px;
+
+//     background-size: 70px 70px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: var(--color-background-team);
+
+//     /* УБРАТЬ */
+//     /* outline: 2px solid tomato;  */
+// }
+// ______________________________________________________________
+
+.icon-features-first::before {
+    background-image: url("../images/antenna1.svg");
+}
+
+.icon-features-second::before {
+    background-image: url("../images/clock2.svg");
+}
+
+.icon-features-third::before {
+    background-image: url("../images/diagram3.svg");
+}
+
+.icon-features-fourth::before {
+    background-image: url("../images/astronaut4.svg");
+}
+
+/* ____________________________________________________________________________ */
+
+
+/* ==== Стилизация заголовка h3 в Наши особенности (features) ====*/
+.features-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: inherit;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--color-font-main);
+}
+
+
+/* ==== Стилизация Текста p в (в Наши особенности (features) ==== */
+.features-description {
+    line-height: 1.71;
+
+    /* width: 270px; */
+
+    color: var(--color-font-head);
+}
+
+/* ______________________  К О Н Е Ц Блок-секция_2 Наши особенности ______________________ */

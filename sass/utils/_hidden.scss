@@ -1,0 +1,6 @@
+/* ================ Скрытие заголовков (visually-hidden) ================ */
+.visually-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
